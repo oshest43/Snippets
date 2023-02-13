@@ -1,0 +1,15 @@
+/** Usage Note 24033: How can I set the margins for the ODS RTF destination? **/
+/** https://support.sas.com/kb/24/033.html **/
+
+proc template;
+     define style styles.test;
+       parent=styles.rtf;
+       style body from document /
+             leftmargin=2.5in
+             rightmargin=2.5in
+             topmargin=2.5in
+             bottommargin=2.5in;
+       end;
+   run;
+
+  ods rtf file="file.rtf" style=styles.test;
