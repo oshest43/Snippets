@@ -1,2 +1,2 @@
-# sas-snippets
-A collection of short SAS programs and code snippets
+# snippets
+A collection of short programs and code snippets
